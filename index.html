@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gestión Administrativa y Financiera</title>
+<link rel="icon" type="image/png" href="favicon-ciu.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Finanzas">
+<meta name="theme-color" content="#7A00BF">
+<script>
+  // ÚNICO DATO A CAMBIAR: enlace de la web de Apps Script (termina en /exec)
+  var URL_APP = "https://script.google.com/a/macros/continentaluniversity.us/s/AKfycbyWeE22r7tiinj8qzc9nrkg83k7IvfzLdLwBt8_TCgVUXgLpAIJLnobett11hxqaX5h/exec";
+  // Si se abre desde el ícono de la pantalla de inicio, entra directo
+  if (window.navigator.standalone === true) { window.location.replace(URL_APP); }
+</script>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: #7A00BF; color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    padding: calc(24px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
+  }
+  main { max-width: 360px; width: 100%; text-align: center; }
+  img { width: 112px; height: 112px; border-radius: 26px; border: 1px solid rgba(255,255,255,.35); }
+  h1 { font-size: 22px; font-weight: 600; line-height: 1.3; margin: 20px 0 8px; }
+  p { font-size: 15px; line-height: 1.55; margin: 0 0 24px; color: rgba(255,255,255,.85); }
+  a.boton {
+    display: block; background: #fff; color: #5A008D; text-decoration: none;
+    font-weight: 600; font-size: 16px; padding: 14px; border-radius: 12px;
+  }
+  a.boton:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .ayuda { margin-top: 28px; font-size: 13px; text-align: left; background: rgba(255,255,255,.1); border-radius: 12px; padding: 14px 16px; }
+  .ayuda ol { margin: 6px 0 0; padding-left: 18px; }
+  .ayuda li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <img src="apple-touch-icon.png" alt="Continental International Universities y Continental Florida University">
+  <h1>Gestión Administrativa y Financiera</h1>
+  <p>Continental International Universities y Continental Florida University</p>
+  <a class="boton" id="ingresar" href="#">Ingresar</a>
+  <div class="ayuda">
+    Para tener el acceso en la pantalla de inicio del iPhone:
+    <ol>
+      <li>Abra esta página en Safari.</li>
+      <li>Toque el botón Compartir.</li>
+      <li>Seleccione «Agregar a pantalla de inicio» y confirme.</li>
+    </ol>
+  </div>
+</main>
+<script>document.getElementById("ingresar").href = URL_APP;</script>
+</body>
+</html>
